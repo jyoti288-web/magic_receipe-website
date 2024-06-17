@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="showRecipeCards()">
+    <header>
+        <div class="header-container">
+            <div class="Logo">
+                <img src="../images/55-555458_food-logo-png-ghanta-transparent-png.png" alt="Magic Recipes Logo">
+                <h1>Magic Recipes</h1>
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="../about/about.html">About</a></li>
+                    <li><a href="../recipes/recipe.html">Recipes</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <h1>Chaat & Street Food Recipes</h1>
+        <h2>Authentic Indian Recipes For The Modern Kitchen</h2>
+        <h3>Elevate your cooking</h3>
+        <div id="recipe-container" class="container">
+            <!-- Recipe cards will be displayed here -->
+        </div>
+    </div>
+
+    <script>
+        function showRecipeCards() {
+            var container = document.getElementById('recipe-container');
+            container.innerHTML = `
+                <a href="../recipes/recipe4.html" class="recipe-card">
+                    <img src="../images/Delhi_Style_Matar.jpg" alt="Chaat 1">
+                    <h2>Delhi Style Matar Chaat</h2>
+                    <p>Delhi Style Matar Chaat Recipe - Spicy & Tangy Green Peas Chaat</p>
+                </a>
+                <a href="../recipes/recipe2.html" class="recipe-card">
+                    <img src="../images/Rasgulla_Recipe.jpg" alt="Chaat 2">
+                    <h2>Rasgulla Recipe</h2>
+                    <p>Traditional Bengali Rasgulla Recipe - Cottage Cheese Balls In Sweetened Syrup</p>
+                </a>
+                <a href="../recipes/recipe3.html" class="recipe-card">
+                    <img src="../images/vada pava.jpg" alt="Chaat 3">
+                    <h2>Vada Pav Recipe</h2>
+                    <p>Homemade Vada Pav Recipe With Cheesy Aloo Vada</p>
+                </a>
+                <a href="../recipes/recipe1.html" class="recipe-card">
+                    <img src="../images/mumbai_style_murmura_1600.jpg" alt="Chaat 4">
+                    <h2>Spicy Roasted Puffed Rice</h2>
+                    <p>Mumbai Style Spicy Murmura Recipe (Spicy Roasted Puffed Rice)</p>
+                </a>
+                <!-- Add more recipe cards as needed -->
+            `;
+        }
+    </script>
+     <footer class="footer">
+        <p>&copy; 2024 Magic Recipes. All rights reserved.</p>
+    </footer>
+</body>
+</html>

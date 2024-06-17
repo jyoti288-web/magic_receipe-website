@@ -1,0 +1,142 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(105, 22%, 93%);
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0a0a0a;
+    color: #f1ecec;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.Logo {
+    display: flex;
+    align-items: left;
+}
+
+.Logo img {
+    height: 40px; /* Adjust height as needed */
+    margin-right: 10px;
+}
+
+.Logo h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #fdf9f9;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+}
+
+.nav-bar ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-bar ul li a {
+    color: #f8efef;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-bar ul li a:hover {
+    color: #fcfbf8; /* Change color on hover as desired */
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content h1, .content h2, .content h3 {
+    color: #0a0a0a; /* Accent color */
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recipe-card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-card img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.recipe-card h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.recipe-card p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+/* Footer styling */
+footer {
+    background-color: #0e0d0d;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: #fcf3f3;
+    font-size: 0.9rem;
+    text-align: center;
+}
